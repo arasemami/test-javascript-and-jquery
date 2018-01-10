@@ -14,7 +14,7 @@
 
 <header>
         <h1 class="welcome-text-box" >
-            Wlcome to my prject cours
+            Work with string :
         </h1>
 
 </header>
@@ -25,6 +25,7 @@
               <span> go </span>
         </div>
     </a>
+ 
 
 
 
@@ -32,6 +33,13 @@
 
 
 <script>
+    var rndstring="Hello lif you are the best for me";
+    document.write("<b>"+rndstring + "</b><br />");
+    document.write("slice 3 to 22 :" + rndstring.slice(3,22)+"<br />");
+    document.write("string Length :"+ rndstring.length +"<br />");
+
+    document.write("index for \"are\" :" + rndstring.indexOf("are"));
+
     function myFunction() {
 
         document.getElementById("demo").innerHTML = "Paragraph changed.";
