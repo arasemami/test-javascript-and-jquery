@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="tr-TR" xmlns="http://www.w3.org/1999/xhtml">
 
+
+
+<html lang="tr-TR" xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Definition and Usage
+The prompt() method displays a dialog box that prompts the visitor for input.
+A prompt box is often used if you want the user to input a value before entering a page.
+-->
         <head>
         
-            <title>page </title>
+            <title>prompt Javascript </title>
             <!-- Bootstrap core CSS -->
             <link href="../style/style.css" rel="stylesheet">
             <script src="../style/script.js"></script>
@@ -14,27 +21,43 @@
 
 <header>
         <h1 class="welcome-text-box" >
-            Wlcome to my prject cours
+           What is it prompt ?
         </h1>
 
 </header>
 <main>
 
-    <a href="/pages/p1.html" style="text-decoration: none;" >
+    <a href="#" onclick="myFunction()" style="text-decoration: none;" >
         <div class="btn-box">
-              <span> go </span>
+              <span> Insert Your Name (prompt) </span>
         </div>
     </a>
+    <h2>
+            <p id="name"></p>
+    </h2>
 
+
+
+    
 
 
 </main>
 
 
 <script>
+
+
     function myFunction() {
 
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
+        var yourName = prompt("Pleas Insert Your Name :");
+            if(yourName != null)
+            {
+                document.getElementById("name").innerText ="Hell, " + yourName;
+
+            }
+            else{
+               alert("Pleas your Name in Next Time");
+            }
     }
 
 
