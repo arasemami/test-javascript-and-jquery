@@ -20,12 +20,19 @@
 </header>
 <main>
 
-    <a href="/pages/p1.html" style="text-decoration: none;" >
+    <a href="#" onclick="myFunction()" style="text-decoration: none;" >
         <div class="btn-box">
-              <span> go </span>
+              <span> Click Me! (If & else) </span>
         </div>
     </a>
  
+    <a href="#" onclick="myFunction()" style="text-decoration: none;" >
+            <div class="btn-box">
+                  <span> Click Me! (switch) </span>
+            </div>
+        </a>
+
+    <p id="demo">Will Be writ hear . . .</p>
 
 
 
@@ -48,8 +55,34 @@
 
 
     function myFunction() {
+        var age = prompt("pleas insert your age :");
+        if(age == 8)
+        {
+            alert("its true, your age is 8");
+        }
+        else if(age <= 8){
+            alert("its true, your age is <= 8");
+        }
+        else if(age => 8){
+            alert("its true, your age is => 8");
+        }
+        else {
+            alert("No true");
+        }
+    }
 
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
+    function mySwitch()
+    {
+        var msg="";
+        var x= prompt("insert your age between 1 to 6 example");
+
+        switch(x){
+            case 6:
+            msg="you must go to kindergarden"
+
+        }
+
+
     }
 
 
