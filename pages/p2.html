@@ -26,7 +26,7 @@
         </div>
     </a>
  
-    <a href="#" onclick="myFunction()" style="text-decoration: none;" >
+    <a href="#" onclick="mySwitch()" style="text-decoration: none;" >
             <div class="btn-box">
                   <span> Click Me! (switch) </span>
             </div>
@@ -73,15 +73,34 @@
 
     function mySwitch()
     {
-        var msg="";
-        var x= prompt("insert your age between 1 to 6 example");
+        var msg  ="null";
+        var x =parseInt(prompt("insert your age between 5 to 7 example"));
 
         switch(x){
-            case 6:
-            msg="you must go to kindergarden"
+            case 5 :
+            msg ="you must go to kindergarden its 5";
+            break;
+            case 6 :
+            msg ="you must go to kindergarden";
+            break;
+            case 7 :
+            msg ="you must go to school becus its 7";
+            break;
+
+            default :
+            msg ="its defualt :"+ x;
+           
 
         }
-
+       if(msg!="null"){
+        alert(msg);
+       }
+       else
+       {
+        alert(msg); 
+       }
+           
+        
 
     }
 
