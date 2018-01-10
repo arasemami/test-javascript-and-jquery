@@ -3,7 +3,7 @@
 
         <head>
         
-            <title>page </title>
+            <title>Work with string in javascript </title>
             <!-- Bootstrap core CSS -->
             <link href="../style/style.css" rel="stylesheet">
             <script src="../style/script.js"></script>
@@ -38,7 +38,14 @@
     document.write("slice 3 to 22 :" + rndstring.slice(3,22)+"<br />");
     document.write("string Length :"+ rndstring.length +"<br />");
 
-    document.write("index for \"are\" :" + rndstring.indexOf("are"));
+    document.write("index for \"are\" :" + rndstring.indexOf("are")+"<br />");
+    document.write("substr 19 to 4, like slice :" + rndstring.substr(19,4)+"<br />");
+    document.write( rndstring.replace("are","they") +"<br />");
+    document.write("At Index 2 :" + rndstring.charAt(1) +"<br />" );
+
+    var strArray = rndstring.split("l");
+    document.write(strArray);
+
 
     function myFunction() {
 
