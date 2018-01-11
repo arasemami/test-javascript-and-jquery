@@ -30,11 +30,27 @@
               <span> Sort Number 15 to 1 </span>
         </div>
     </a>
+
  
  
     
     <p id="demo">Will Be writ hear . . .</p>
 
+    <a href="#"
+    onmouseover="this.style.color='red';"
+    onmouseout="this.style.color='blue';"
+    onmousedown="this.style.color='black';"
+    ondblclick="this.text='you doble ciliked me'"
+    onmouseup="this.text='say hello';"
+    >Cilick me</a>
+
+
+    <input type="text" id="txtinput" placeholder="insert some text"
+    onchange="var dataEntered=document.getElementById('txtinput').value;
+    alert('user Typed : ' + dataEntered)"/>
+
+    <input type="text" id="txtX">
+    <input type="text" id="txtY">
 
 
 </main>
@@ -60,6 +76,29 @@
      document.write("number of sort :", number.toString() , "<br />" );
 
     }
+ 
+
+ document.body.onmousedown = function (e){
+  
+        var px = e.pageX;
+        var py = e.pageY;
+
+    if(px === undefined){
+        px =e.clientX  ;
+        py = e.clientY  ;
+
+    }
+
+    document.getElementById('txtX').value= px;
+    document.getElementById('txtY').value= py;
+
+
+
+
+ }
+
+
+     
 
 
     </script>

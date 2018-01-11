@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr-TR" xmlns="http://www.w3.org/1999/xhtml">
+
+        <head>
+        
+            <title>Work with string in javascript </title>
+            <!-- Bootstrap core CSS -->
+            <link href="../style/style.css" rel="stylesheet">
+            <script src="../style/script.js"></script>
+
+        </head>
+
+<body>
+
+<header>
+        <h1 class="welcome-text-box" >
+                mouse move X & Y
+        </h1>
+
+</header>
+<main>
+
+ 
+ 
+ 
+ 
+
+    <input type="text" id="txtX">
+    <input type="text" id="txtY">
+
+
+</main>
+
+
+    <script>
+ 
+ 
+ 
+
+ document.onmousemove = function (e){
+  
+        var px = e.pageX;
+        var py = e.pageY;
+
+    if(px === undefined){
+        px =e.clientX  ;
+        py = e.clientY  ;
+
+    }
+
+    document.getElementById('txtX').value= px;
+    document.getElementById('txtY').value= py;
+
+
+
+
+ }
+
+
+     
+
+
+    </script>
+
+
+
+
+</body>
+</html>
