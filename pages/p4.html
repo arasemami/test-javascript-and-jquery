@@ -20,11 +20,17 @@
 </header>
 <main>
 
-    <a href="#" onclick="sortNum()" style="text-decoration: none;" >
+    <a href="#" onclick="sortNumx()" style="text-decoration: none;" >
         <div class="btn-box">
               <span> Sort Number 1 to 15 </span>
         </div>
     </a>
+    <a href="#" onclick="sortNumy()" style="text-decoration: none;" >
+        <div class="btn-box">
+              <span> Sort Number 15 to 1 </span>
+        </div>
+    </a>
+ 
  
     
     <p id="demo">Will Be writ hear . . .</p>
@@ -36,10 +42,20 @@
 
     <script>
  
-    function sortNum(){
+    function sortNumx(){
      var number = [2,6,1,15,3,5,10,9,11,4,7,8,14,13,12];
 
      number.sort(function(x,y){ return x - y});
+
+     document.write("number of sort :", number.toString() , "<br />" );
+
+    }
+
+     
+    function sortNumy(){
+     var number = [2,6,1,15,3,5,10,9,11,4,7,8,14,13,12];
+
+     number.sort(function(x,y){ return y - x});
 
      document.write("number of sort :", number.toString() , "<br />" );
 
