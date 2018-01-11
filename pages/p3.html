@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr-TR" xmlns="http://www.w3.org/1999/xhtml">
+
+        <head>
+        
+            <title>Work with string in javascript </title>
+            <!-- Bootstrap core CSS -->
+            <link href="../style/style.css" rel="stylesheet">
+            <script src="../style/script.js"></script>
+
+        </head>
+
+<body>
+
+<header>
+        <h1 class="welcome-text-box" >
+                While & Loop & For
+        </h1>
+
+</header>
+<main>
+
+    <a href="#" onclick="stwhile()" style="text-decoration: none;" >
+        <div class="btn-box">
+              <span> while </span>
+        </div>
+    </a>
+ 
+    <a href="#" onclick="doWhile()" style="text-decoration: none;" >
+            <div class="btn-box">
+                  <span> do while </span>
+            </div>
+        </a>
+
+        <a href="#" onclick="forI()" style="text-decoration: none;" >
+            <div class="btn-box">
+                  <span> For i </span>
+            </div>
+        </a>
+
+    <p id="demo">Will Be writ hear . . .</p>
+
+
+
+</main>
+
+
+    <script>
+ 
+    function stwhile(){
+        var i= 1;
+        var st= document.getElementById("demo").innerHTML;
+        
+        while(i <= 10)
+        { 
+            document.getElementById("demo").innerHTML = st + "<br />" +  i + "<br />";
+            i++;
+        }
+
+    }
+
+
+    function doWhile()
+    {
+        do{
+            var gusess = prompt("Pleas insert your gusess") ;
+
+        }while(gusess != 15)
+            alert("Your gesses is 15 and true");
+    }
+
+
+    function forI()
+    {
+        do{
+            var gusess = prompt("Pleas insert your gusess") ;
+
+        }while(gusess != 15)
+            alert("Your gesses is 15 and true");
+    }
+
+    </script>
+
+
+
+
+</body>
+</html>
