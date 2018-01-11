@@ -20,24 +20,13 @@
 </header>
 <main>
 
-    <a href="#" onclick="stwhile()" style="text-decoration: none;" >
+    <a href="#" onclick="sortNum()" style="text-decoration: none;" >
         <div class="btn-box">
-              <span> while </span>
+              <span> Sort Number 1 to 15 </span>
         </div>
     </a>
  
-    <a href="#" onclick="doWhile()" style="text-decoration: none;" >
-            <div class="btn-box">
-                  <span> do while </span>
-            </div>
-        </a>
-
-        <a href="#" onclick="forI()" style="text-decoration: none;" >
-            <div class="btn-box">
-                  <span> For i </span>
-            </div>
-        </a>
-
+    
     <p id="demo">Will Be writ hear . . .</p>
 
 
@@ -47,43 +36,15 @@
 
     <script>
  
-    function stwhile(){
-        var i= 1;
-        var st= document.getElementById("demo").innerHTML;
-        
-        while(i <= 10)
-        { 
-            document.getElementById("demo").innerHTML = st + "<br />" +  i + "<br />";
-            i++;
-        }
+    function sortNum(){
+     var number = [2,6,1,15,3,5,10,9,11,4,7,8,14,13,12];
+
+     number.sort(function(x,y){ return x - y});
+
+     document.write("number of sort :", number.toString() , "<br />" );
 
     }
 
-
-    function doWhile()
-    {
-        do{
-            var gusess = prompt("Pleas insert your gusess") ;
-
-        }while(gusess != 15)
-            alert("Your gesses is 15 and true");
-    }
-
-
-    function forI()
-    {
-    
-    for(i =0 ; i<=200 ; i++)
-    {
-        if((i % 2) === 0){
-            continue;
-        }
-
-     
-
-        document.write(i + "<br /><br />");
-    }
-    }
 
     </script>
 
