@@ -72,11 +72,17 @@
 
     function forI()
     {
-        do{
-            var gusess = prompt("Pleas insert your gusess") ;
+    
+    for(i =0 ; i<=200 ; i++)
+    {
+        if((i % 2) === 0){
+            continue;
+        }
 
-        }while(gusess != 15)
-            alert("Your gesses is 15 and true");
+     
+
+        document.write(i + "<br /><br />");
+    }
     }
 
     </script>
