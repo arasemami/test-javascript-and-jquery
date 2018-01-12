@@ -42,14 +42,9 @@
         var px = e.pageX;
         var py = e.pageY;
 
-    if(px === undefined){
-        px =e.clientX  ;
-        py = e.clientY  ;
-
-    }
-
-    document.getElementById('txtX').value= px;
-    document.getElementById('txtY').value= py;
+  
+    document.getElementById('txtX').value= e.clientX;
+    document.getElementById('txtY').value= e.clientY;
 
 
 

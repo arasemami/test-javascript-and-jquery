@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr-TR" xmlns="http://www.w3.org/1999/xhtml">
+
+        <head>
+        
+            <title>Back - Forward - Reaload  Page </title>
+            <!-- Bootstrap core CSS -->
+            <link href="../style/style.css" rel="stylesheet">
+            <script src="../style/script.js"></script>
+
+        </head>
+
+<body>
+
+<header>
+        <h1 class="welcome-text-box" >
+                mouse move X & Y
+        </h1>
+
+</header>
+<main>
+
+    <a href="#" id="btnBack"   style="text-decoration: none;" >
+        <div class="btn-box">
+              <span> Back </span>
+        </div>
+    </a>
+
+    <a href="#" id="btnForward" style="text-decoration: none;" >
+        <div class="btn-box">
+              <span> Forward </span>
+        </div>
+    </a>
+
+    <a href="#" id="btnReaload" style="text-decoration: none;" >
+        <div class="btn-box">
+              <span> Reload </span>
+        </div>
+    </a>
+
+
+    <div class="bg-image">
+        <div class="bg-div-black">
+         <h3  >
+            <h1>Amsterdam</h2>
+            <div class="flag"></div>
+            </h3>
+            <p>  1,187 properties</p>
+        </div>
+
+    </div>
+  
+
+ 
+
+</main>
+
+
+    <script>
+
+            document.getElementById('btnBack').onclick = function (event){
+                history.back();
+
+            }
+
+            document.getElementById('btnForward').onclick = function (event){
+                history.forward();
+                }
+
+                document.getElementById('btnReaload').onclick = function (event) {
+                   window.location.reload(true);
+                }
+
+                
+    </script>
+
+
+
+
+</body>
+</html>
